@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://8226ycqiqlvn"]
+[gd_scene load_steps=5 format=3 uid="uid://8llgn4emae5f"]
 
 [ext_resource type="Texture2D" uid="uid://rfcxggfj1a3p" path="res://Assets/Textures/blankSpriteIcon.png" id="1_gjwgc"]
 [ext_resource type="Script" path="res://Scripts/ToolBackground.gd" id="2_h7muq"]

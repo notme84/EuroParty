@@ -1,28 +1,28 @@
-[gd_scene load_steps=5 format=3 uid="uid://dicuowtbse8ai"]
+[gd_scene load_steps=5 format=3 uid="uid://bvav2v8vv34ck"]
 
-[ext_resource type="Texture2D" uid="uid://rfcxggfj1a3p" path="res://Assets/Textures/blankSpriteIcon.png" id="1_jr11d"]
-[ext_resource type="Texture2D" uid="uid://cq480fk4pr44l" path="res://Assets/Textures/mushroom.png" id="2_8llnb"]
-[ext_resource type="Script" path="res://Scripts/MushroomBackground.gd" id="2_t2ejj"]
+[ext_resource type="Texture2D" uid="uid://rfcxggfj1a3p" path="res://Assets/Textures/blankSpriteIcon.png" id="1_kveyc"]
+[ext_resource type="Script" path="res://Scripts/RockBackground.gd" id="2_3swjt"]
+[ext_resource type="Texture2D" uid="uid://s57x4oktl5h6" path="res://Assets/Textures/rock.png" id="2_44gas"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kjxqd"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ng3u8"]
 size = Vector2(140, 140)
 
 [node name="WorkerSpace" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
-texture = ExtResource("1_jr11d")
-script = ExtResource("2_t2ejj")
+texture = ExtResource("1_kveyc")
+script = ExtResource("2_3swjt")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture_filter = 1
 scale = Vector2(2, 2)
-texture = ExtResource("2_8llnb")
+texture = ExtResource("2_44gas")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("RectangleShape2D_kjxqd")
+shape = SubResource("RectangleShape2D_ng3u8")
 
 [connection signal="input_event" from="Area2D" to="Background" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Area2D" to="Background" method="_on_area_2d_mouse_entered"]

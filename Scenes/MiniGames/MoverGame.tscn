@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://srhhc6dpq0w6"]
+
+[ext_resource type="Texture2D" uid="uid://bsdyjkthtbgm3" path="res://Assets/Textures/background.png" id="1_x8e0p"]
+[ext_resource type="PackedScene" uid="uid://xjq6kik2ar2b" path="res://Scenes/player.tscn" id="2_i0o1a"]
+[ext_resource type="PackedScene" uid="uid://by6mht33jw1tb" path="res://Scenes/game_ender.tscn" id="3_4wp7w"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_x8e0p")
+centered = false
+
+[node name="Player" parent="." instance=ExtResource("2_i0o1a")]
+position = Vector2(932, 602)
+
+[node name="GameEnder" parent="." instance=ExtResource("3_4wp7w")]
+position = Vector2(1527, 551)

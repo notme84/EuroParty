@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://d368jql11mtri"]
 
 [ext_resource type="Texture2D" uid="uid://b58x5fj4c2ne0" path="res://Assets/Textures/base board.png" id="1_6jqsl"]
-[ext_resource type="PackedScene" uid="uid://cxf4f172xgejb" path="res://Scenes/RockSpace.tscn" id="2_rsimd"]
-[ext_resource type="PackedScene" uid="uid://jm22x6bq2c1v" path="res://Scenes/WaterSpace.tscn" id="3_tm353"]
-[ext_resource type="PackedScene" uid="uid://8226ycqiqlvn" path="res://Scenes/ToolSpace.tscn" id="4_wjywg"]
-[ext_resource type="PackedScene" uid="uid://dicuowtbse8ai" path="res://Scenes/MushroomSpace.tscn" id="5_lob6s"]
+[ext_resource type="PackedScene" uid="uid://bvav2v8vv34ck" path="res://Scenes/Board/RockSpace.tscn" id="2_rsimd"]
+[ext_resource type="PackedScene" uid="uid://cfutpjb0mpmyu" path="res://Scenes/Board/WaterSpace.tscn" id="3_tm353"]
+[ext_resource type="PackedScene" uid="uid://8llgn4emae5f" path="res://Scenes/Board/ToolSpace.tscn" id="4_wjywg"]
+[ext_resource type="PackedScene" uid="uid://cn7qyx0qrefta" path="res://Scenes/Board/MushroomSpace.tscn" id="5_lob6s"]
 
 [node name="Node2D" type="Node2D"]
 

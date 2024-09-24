@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://jm22x6bq2c1v"]
+[gd_scene load_steps=5 format=3 uid="uid://cfutpjb0mpmyu"]
 
 [ext_resource type="Texture2D" uid="uid://rfcxggfj1a3p" path="res://Assets/Textures/blankSpriteIcon.png" id="1_2g3os"]
 [ext_resource type="Texture2D" uid="uid://rsgph0qbxbbb" path="res://Assets/Textures/water.png" id="2_mo24i"]

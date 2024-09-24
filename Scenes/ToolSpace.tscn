@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://8226ycqiqlvn"]
+
+[ext_resource type="Texture2D" uid="uid://rfcxggfj1a3p" path="res://Assets/Textures/blankSpriteIcon.png" id="1_gjwgc"]
+[ext_resource type="Script" path="res://Scenes/background.gd" id="2_05a2o"]
+[ext_resource type="Texture2D" uid="uid://cldjs5i8c4jwv" path="res://Assets/Textures/tool.png" id="2_wd2uq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4rgq"]
+size = Vector2(70, 70)
+
+[node name="WorkerSpace" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_gjwgc")
+script = ExtResource("2_05a2o")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_wd2uq")
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_q4rgq")
+
+[connection signal="mouse_entered" from="Area2D" to="Background" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Background" method="_on_area_2d_mouse_exited"]

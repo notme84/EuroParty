@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://d368jql11mtri"]
+
+[ext_resource type="Texture2D" uid="uid://b58x5fj4c2ne0" path="res://Assets/Textures/base board.png" id="1_6jqsl"]
+[ext_resource type="PackedScene" uid="uid://cxf4f172xgejb" path="res://Scenes/RockSpace.tscn" id="2_rsimd"]
+[ext_resource type="PackedScene" uid="uid://jm22x6bq2c1v" path="res://Scenes/WaterSpace.tscn" id="3_tm353"]
+[ext_resource type="PackedScene" uid="uid://8226ycqiqlvn" path="res://Scenes/ToolSpace.tscn" id="4_wjywg"]
+[ext_resource type="PackedScene" uid="uid://dicuowtbse8ai" path="res://Scenes/MushroomSpace.tscn" id="5_lob6s"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Base board" type="Sprite2D" parent="."]
+position = Vector2(959, 544)
+texture = ExtResource("1_6jqsl")
+
+[node name="Rock" parent="Base board" instance=ExtResource("2_rsimd")]
+position = Vector2(-545.363, 209.273)
+
+[node name="Water" parent="Base board" instance=ExtResource("3_tm353")]
+position = Vector2(-538, -239)
+
+[node name="Tool" parent="Base board" instance=ExtResource("4_wjywg")]
+position = Vector2(579, -238)
+
+[node name="Mushroom" parent="Base board" instance=ExtResource("5_lob6s")]
+position = Vector2(565, 206)

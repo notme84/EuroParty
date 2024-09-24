@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://rfcxggfj1a3p" path="res://Assets/Textures/blankSpriteIcon.png" id="1_2g3os"]
 [ext_resource type="Texture2D" uid="uid://rsgph0qbxbbb" path="res://Assets/Textures/water.png" id="2_mo24i"]
-[ext_resource type="Script" path="res://Scenes/background.gd" id="2_o4lvm"]
+[ext_resource type="Script" path="res://Scripts/WaterBackground.gd" id="2_qc7vy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jr6l5"]
 size = Vector2(141, 140)
@@ -12,7 +12,7 @@ size = Vector2(141, 140)
 [node name="Background" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
 texture = ExtResource("1_2g3os")
-script = ExtResource("2_o4lvm")
+script = ExtResource("2_qc7vy")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -25,5 +25,6 @@ texture = ExtResource("2_mo24i")
 position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_jr6l5")
 
+[connection signal="input_event" from="Area2D" to="Background" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Area2D" to="Background" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="Background" method="_on_area_2d_mouse_exited"]
